@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SpringMoutain</string>
+    <string name="welcomeTo">Welcome to Spring Moutain</string>
+    <string name="exploreUs">Explore Us</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
 </resources>

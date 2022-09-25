@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="99"
+    tools:context=".MainScreenActivity">
+    <LinearLayout
+        style="@style/LinearLayoutMainStyle"
+        android:gravity="center | bottom"
+        android:layout_weight="19">
+        <TextView
+            style="@style/WelcomeTextStyle"
+            android:textStyle="bold"
+            android:text="@string/welcomeTo"/>
+        <TextView
+            style="@style/WelcomeTextStyle"
+            android:text="@string/exploreUs"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/LinearLayoutMainStyle"
+        android:gravity="center"
+        android:layout_weight="58">
+        <ImageView
+            style="@style/ImageStyle"
+            android:src="@drawable/main_image"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/LinearLayoutMainStyle"
+        android:gravity="center_horizontal"
+        android:layout_weight="22">
+        <LinearLayout
+            style="@style/ImageStyle"
+            android:background="@drawable/login_button"
+            android:gravity="center"
+            >
+        <TextView
+            style="@style/LoginText" />
+        </LinearLayout>
+        <TextView
+            style="@style/SignUpText" />
+    </LinearLayout>
+</LinearLayout>
