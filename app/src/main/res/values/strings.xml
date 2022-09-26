@@ -4,4 +4,6 @@
     <string name="exploreUs">Explore Us</string>
     <string name="login">Login</string>
     <string name="signup">Sign up</string>
+    <string name="emailAddress">Email address</string>
+    <string name="password">Password</string>
 </resources>

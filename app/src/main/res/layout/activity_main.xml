@@ -8,40 +8,55 @@
     android:orientation="vertical"
     android:weightSum="99"
     tools:context=".MainScreenActivity">
+
     <LinearLayout
         style="@style/LinearLayoutMainStyle"
-        android:gravity="center | bottom"
-        android:layout_weight="19">
+        android:layout_weight="19"
+        android:gravity="center | bottom">
+
         <TextView
             style="@style/WelcomeTextStyle"
-            android:textStyle="bold"
-            android:text="@string/welcomeTo"/>
+            android:text="@string/welcomeTo"
+            android:textStyle="bold" />
+
         <TextView
             style="@style/WelcomeTextStyle"
-            android:text="@string/exploreUs"/>
+            android:text="@string/exploreUs" />
     </LinearLayout>
+
     <LinearLayout
         style="@style/LinearLayoutMainStyle"
-        android:gravity="center"
-        android:layout_weight="58">
+        android:layout_weight="58"
+        android:gravity="center">
+
         <ImageView
             style="@style/ImageStyle"
-            android:src="@drawable/main_image"
-            />
+            android:src="@drawable/main_image" />
     </LinearLayout>
+
     <LinearLayout
         style="@style/LinearLayoutMainStyle"
-        android:gravity="center_horizontal"
-        android:layout_weight="22">
+        android:layout_weight="22"
+        android:gravity="center_horizontal">
+
         <LinearLayout
+            android:id="@+id/btnLogin"
             style="@style/ImageStyle"
             android:background="@drawable/login_button"
-            android:gravity="center"
-            >
-        <TextView
-            style="@style/LoginText" />
+            android:gravity="center">
+
+            <TextView
+                style="@style/LoginText"
+                android:layout_marginBottom="10dp" />
         </LinearLayout>
-        <TextView
-            style="@style/SignUpText" />
+
+        <LinearLayout
+            android:id="@+id/btnSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView style="@style/SignUpText" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
