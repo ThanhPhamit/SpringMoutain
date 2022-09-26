@@ -5,12 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/loading_screen"
-    tools:context=".SplashScreenActivity"
-    android:orientation="vertical"
     android:gravity="center"
-    >
+    tools:context=".SplashScreenActivity">
+
     <ImageView
         style="@style/ImageStyle"
-        android:src="@drawable/loading_icon"
-        />
+        android:src="@drawable/loading_icon" />
 </LinearLayout>

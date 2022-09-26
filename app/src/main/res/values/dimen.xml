@@ -2,4 +2,9 @@
 <resources>
     <dimen name="welComeTextSize">25sp</dimen>
     <dimen name="loginTextSize">16sp</dimen>
+    <dimen name="paddingHorizontalLinearLayout">25dp</dimen>
+    <dimen name="loginAndSignUpTextSize">30sp</dimen>
+    <dimen name="editTextHeight">60dp</dimen>
+    <dimen name="editTextSize">16sp</dimen>
+    <dimen name="drawablePadding">10dp</dimen>
 </resources>
